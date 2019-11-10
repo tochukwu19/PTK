@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+    <title>Pound to KG Converter</title>
+    <style>
+        .card {
+            width: 70%;
+            margin: auto;
+        }
+
+        .bot {
+            position: relative;
+            bottom: -24.7px;
+        }
+
+        .btn {
+            width: 30%;
+            margin: auto;
+        }
+
+        #btnCont {
+            display: flex;
+            flex-direction: row;
+        }
+        .input{
+            width: 90%;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-primary mb-3">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                PTK Converter
+            </a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="convCont card card-body">
+            <h2>Convert Pounds to Kilogram</h2>
+            <p class="lead">Enter a value</p>
+
+            <div class="input-group ">
+            <div class="input-group-prepend">
+                <div class="input-group-text">lb</div>
+            </div>
+            <input type="text" id="pounds" class="form-control" placeholder="Pounds">
+            <div class="invalid-feedback">
+                You must a input number
+            </div>
+            </div>
+
+           
+            <div class="input-group mt-3">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">kg</div>
+                </div>
+                <input type="text" id="kg" class="form-control" placeholder="Kilogram" readonly>
+                <div class="invalid-feedback">
+                    You must a input number
+                </div>
+            </div>
+
+            <div id="btnCont">
+                <button class="btn btn-info mt-3">
+                    CONVERT
+                </button>
+                <button class="btn btn-danger mt-3">
+                    CLEAR
+                </button>
+            </div>
+
+
+        </div>
+    </div>
+    <footer class="mt-5 bot p-3 text-center bg-dark">
+        PTK Converter &copy;
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
